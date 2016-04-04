@@ -1,3 +1,9 @@
+#
+#        _   ,--()            Make sure you back it up!
+#       ( )-'-.------|>
+#        "     `--[]          github.com/nomadmtb/backup_scripts_py
+#
+
 # Kyle Luce
 # 4/3/2016
 # settings.py
@@ -8,20 +14,21 @@
 # BACKUP_ITEM
 # DESC: Use this List to define Tuples of items that you would like to backup.
 # Please note that you need to specify if it is a directory or a regular file
-# with the second position in each Tuple.
+# with the second position in each Tuple.  The last argument is the alias when
+# the item is copied.
 #-------------------------
 # BACKUP_ITEM = [
-#     ('/Users/kyle/Documents/git','dir'),
-#     ('/Users/kyle/.ssh','dir'),
-#     ('/Users/kgluce/.bash_profile', 'file')
+#     ('/Users/kyle/Documents/git','dir', 'git_bak'),
+#     ('/Users/kyle/.ssh','dir', 'ssh_bak'),
+#     ('/Users/kgluce/.bash_profile', 'file', 'bash_profile.bak')
 #     ...
 # ]
 BACKUP_ITEM = [
-    ('/Users/kgluce/.ssh', 'dir'),
-    ('/Users/kgluce/Documents/git','dir'),
-    ('/Users/kgluce/Documents/programming','dir'),
-    ('/Users/kgluce/Documents/personal','dir'),
-    ('/Users/kgluce/.bash_profile','file'),
+    ('/Users/kgluce/.ssh', 'dir', 'SSH_DATA'),
+    ('/Users/kgluce/Documents/git','dir', 'GIT_DATA'),
+    ('/Users/kgluce/Documents/personal','dir', 'PERSONAL_DATA'),
+    ('/Users/kgluce/Documents/csuchico','dir', 'CSUCHICO_DATA'),
+    ('/Users/kgluce/.bash_profile','file', 'BASH_PROFILE'),
 ]
 
 # BACKUP_DEST
@@ -36,5 +43,5 @@ BACKUP_ITEM = [
 #     ...
 # ]
 BACKUP_DEST = [
-    ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H:%M:%S'),
+    ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H_%M_%S'),
 ]
