@@ -1,7 +1,7 @@
 #
 #        _   ,--()            Make sure you back it up!
 #       ( )-'-.------|>
-#        "     `--[]          github.com/nomadmtb/backup_scripts.py
+#        "     `--[]          github.com/nomadmtb/backup_scripts_py
 #
 
 # Kyle Luce
@@ -15,4 +15,15 @@ import settings
 import shutil
 
 class Backup:
-    pass
+
+    def __init__(self):
+        self.__BACKUP_ITEM = settings.BACKUP_ITEM
+        self.__BACKUP_DEST = settings.BACKUP_DEST
+
+    def start(self):
+        pass
+
+if __name__ == '__main__':
+
+    my_backup = Backup()
+    my_backup.start()
