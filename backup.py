@@ -9,3 +9,10 @@
 # backup.py
 # DESC: This is the module that will contain all of the backup logic.
 #------------------------------------------------------------------------------
+
+# Import ./settings.py and shutil
+import settings
+import shutil
+
+class Backup:
+    pass
