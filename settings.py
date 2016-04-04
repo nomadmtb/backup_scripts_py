@@ -20,16 +20,21 @@ BACKUP_ITEM = [
     ('/Users/kgluce/.ssh', 'dir'),
     ('/Users/kgluce/Documents/git','dir'),
     ('/Users/kgluce/Documents/programming','dir'),
+    ('/Users/kgluce/Documents/personal','dir'),
     ('/Users/kgluce/.bash_profile','file'),
 ]
 
 # BACKUP_DEST
 # DESC: Use this List to define Tuples where you want to copy the above files or
-# directories too.  Please note that you can have more than one destination in
-# the destination specifications.
+# directories too.  Each Tuple with also have a datetime format string for the
+# destination path for the next backup.  Please note that you can have more than
+# one destination in the destination specifications.
 #-------------------------
 # BACKUP_DEST = [
-#     ('/Volumes/sandisk_backup_1/backups'),
-#     ('/Volumes/sandisk_backup_2/backups'),
+#     ('/Volumes/sandisk_backup_1/backups', '%Y-%m-%d_%H:%M:%S'),
+#     ('/Volumes/sandisk_backup_2/backups', '%Y-%m-%d_%H:%M'),
 #     ...
 # ]
+BACKUP_DEST = [
+    ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H:%M:%S'),
+]
