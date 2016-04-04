@@ -37,4 +37,5 @@ BACKUP_ITEM = [
 # ]
 BACKUP_DEST = [
     ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H:%M:%S'),
+    ('/Volumes/USB/macbookair_backups_2', '%Y-%m-%d_%H:%M:%S')
 ]
