@@ -26,6 +26,7 @@ def app_notify(status, message):
 def app_panic(message):
     text = "ERROR > {0}".format(message)
     print(text)
+    exit(1)
 
 # Backup class that will contain our backup items and destinations
 class Backup:
