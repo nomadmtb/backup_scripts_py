@@ -65,7 +65,7 @@ class Backup:
                         shutil.copy2(item.path, "{0}/{1}".format(
                             dest.new_path, item.alias))
 
-    # Exection starts here for the backup.
+    # Execution starts here for the backup.
     def start(self):
         self.__welcome()
         self.__initiate_backup()
