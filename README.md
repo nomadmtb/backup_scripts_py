@@ -16,6 +16,7 @@ Before using the back-up scripts, you need to configure them via the settings.md
 
 [settings.py](https://github.com/nomadmtb/backup_scripts_py/blob/master/settings.py)
 ```python
+# This is the stuff that we are backing up...
 BACKUP_ITEM = [
    ('/Users/kgluce/.ssh', 'dir', 'SSH_DATA'),
    ('/Users/kgluce/Documents/git','dir', 'GIT_DATA'),
@@ -24,6 +25,7 @@ BACKUP_ITEM = [
    ('/Users/kgluce/.bash_profile','file', 'BASH_PROFILE'),
 ]
 
+# This is where we are putting it...
 BACKUP_DEST = [
    ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H_%M_%S'),
 ]
