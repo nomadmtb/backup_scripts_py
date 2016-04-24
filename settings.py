@@ -45,3 +45,15 @@ BACKUP_ITEM = [
 BACKUP_DEST = [
     ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H_%M_%S'),
 ]
+
+# MP_COPY
+# DESC: Set this item accordingly when the user has a large amount of
+# BACKUP_ITEMS.  This will create a pool of worker processes that will each copy
+# a BACKUP_ITEM to the required BACKUP_DEST.  This may improve performace if
+# the user has a large number of BACKUP_ITEMS that are significant in size.
+#-------------------------
+# MP_COPY = True
+# OR
+# MP_COPY = False
+#
+MP_COPY = True
