@@ -29,6 +29,9 @@ BACKUP_ITEM = [
 BACKUP_DEST = [
    ('/Volumes/USB/macbookair_backups', '%Y-%m-%d_%H_%M_%S'),
 ]
+
+# Do you want to use multiprocessing?
+MP_COPY = True
 ```
 
 ## How do I run this damn thing?
